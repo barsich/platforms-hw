@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/barsich/platforms-hw/issues"
   },
-  "homepage": "https://github.com/barsich/platforms-hw#readme"
+  "homepage": "https://github.com/barsich/platforms-hw#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
